@@ -39,5 +39,6 @@ git config --global init.defaultBranch main
 ### Personal usage.
 ./linux-edits.sh
 ./remote-mousepad.sh
+./spotify.sh
 
 sudo apt-get update -y && sudo apt-get upgrade -y
