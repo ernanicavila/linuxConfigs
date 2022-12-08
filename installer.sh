@@ -1,48 +1,43 @@
 #!/bin/bash
 
+#Att Linux.
 sudo apt update
 sudo apt upgrade
 sudo apt install -y software-properties-common apt-transport-https wget git git-all mousepad
 
-### Troque esses valores abaixo por suas informações
+### Basic configs from github. Change the values name and email for your usage.
 git config --global user.name "nome completo"
 git config --global user.email "email@email.com"
 git config --global core.editor "mousepad --wait"
 git config --global pull.rebase false
 
-# linhas para obrigar a utilizar SSH sempre
+# Changed default key from HTTP to SSH.
 git config --global url."git@github.com:".insteadOf https://github.com/
 git config --global url."git://".insteadOf https://
 git config --global init.defaultBranch main
 
-
-# instalação de outros pacotes
-./nvidia-geforce-driver.sh 
-./discord.sh
-./mysql.sh
-./insomnia.sh
-
-### Caso você tenha a sua chave SSH, coloque os arquivos dentro da pasta ~/.ssh antes de continuar
-#eval "$(ssh-agent -s)"
+## If you have SSH key, set it into folder ~/.ssh before you continue.
+#eval "$(ssh-agent -s)" Use it to generate SSH key and set it up on Github.
 #chmod 600 ~/.ssh/id_rsa
 #ssh-add ~/.ssh/id_rsa
 
-### Instalando os programas necessários para a Trybe
+# Add a few programs for development/Linux usage.
+./nvidia-geforce-driver.sh 
+./discord.sh
+./mysql.sh #MySQL Workbench
+./insomnia.sh
+./kolourpaint.sh #Paint Brush for Linux.
+
+
+
+### Install programs from daily usage/development.
 ./chrome.sh
 ./zoom.sh
 ./slack.sh
 ./vscode.sh
 
-### Usos pessoais
+### Personal usage.
 ./linux-edits.sh
 ./remote-mousepad.sh
 
-
-### Programas e itens não obrigatórios (tudo está comentado, caso queira alguma coisa, descomente a linha e rode o script novamente
-#sudo apt install -y steam fonts-firacode lm-sensors psensor
-#./change-desktop-folder-name.sh
-#./plank.sh
-#./genymotion.sh
-
-### Executar scripts com ENTER
-#xfconf-query --channel thunar --property /misc-exec-shell-scripts-by-default --create --type bool --set true
+sudo apt-get update -y && sudo apt-get upgrade -y

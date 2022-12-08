@@ -1,5 +1,5 @@
 #!/bin/bash
 sudo snap install discord
 
-#Para remover discord
+#To remove Discord
 #snap remove discord

@@ -1,13 +1,13 @@
-# Boas vindas ao repositório!
+# Welcome to the Repository!
 
-Nesse repo, você encontrará scripts que lhe ajudarão a instalar os programas necessários para deixar seu PC pronto para utilização em desenvolvimento assim que você terminar de instalar o sistema Ubuntu-based de sua preferência.
+In this repo, you'll find Shell Scripts that will assist you on instalation of a few programs needed to development and daily usage.
+Reminder, those are tested into Ubuntu 20.04.
+Follow the steps below:
 
-### Atenção!
-⚠️ Antes de rodar o primeiro passo, siga as _instruções de configuração_ que estão dentro do arquivo `installer.sh`!
+- Run all scripts with `installer.sh`, it's responsable of running some scripts in sequence.
+- To run an script use `./scriptname.sh`.
+- If the script dont work(execute), run the following line: `chmod +x scriptname.sh`.
 
-1. Para rodar todos os scripts, rode o `installer.sh`, ele é responsável por rodar uma série de scripts em sequencia.
-2. Os scripts foram testados na versão 20.04 do Ubuntu, mas você deve conseguir utilizá-los separadamente caso precise.
-3. Para executar um script, use `./nomedoscript.sh`
-4. Caso os scripts não funcionem ao serem baixados, lembre-se de usar o comando `chmod +x nome_do_script.sh` para dar permissão de execução aos arquivos.
-5. Não rode os arquivos do script com `sudo`. Quando `sudo` for necessário, estará escrito no script, e você será solicitado a colocar a senha de administrador de seu SO.
-6. Caso dê algum erro falando que o arquivo não existe, visite a página e verifique se não há uma nova versão e aí altere o script e rode novamente.
+## Points of warning.
+- Dont run scripts with `sudo`. If its necessary will be added into the script.
+- If any script return "dont exist", check the script to see if is there any update to it with the current developer(company that created the package).

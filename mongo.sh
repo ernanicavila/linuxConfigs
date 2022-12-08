@@ -8,5 +8,5 @@ sudo apt install -y mongodb-org
 
 sudo service mongod start
 
-### Caso queira que o servidor do Mongo seja carregado ao iniciar o PC, descomente a linha abaixo:
+###If you wait to startup mongo with OS, uncomment the following line:
 # sudo systemctl enable mongod.service
