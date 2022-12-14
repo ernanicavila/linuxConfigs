@@ -23,18 +23,18 @@ git config --global init.defaultBranch main
 
 # Add a few programs for development/Linux usage.
 ./nvidia-geforce-driver.sh 
-./discord.sh
 ./mysql.sh #MySQL Workbench
 ./insomnia.sh
 ./kolourpaint.sh #Paint Brush for Linux.
+./vscode.sh
 
 
 
-### Install programs from daily usage/development.
+### Install programs from daily usage.
+./discord.sh
 ./chrome.sh
 ./zoom.sh
 ./slack.sh
-./vscode.sh
 
 ### Personal usage.
 ./linux-edits.sh
