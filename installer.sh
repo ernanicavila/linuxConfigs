@@ -17,7 +17,7 @@ git config --global url."git://".insteadOf https://
 git config --global init.defaultBranch main
 
 ## If you have SSH key, set it into folder ~/.ssh before you continue.
-#eval "$(ssh-agent -s)" Use it to generate SSH key and set it up on Github.
+eval "$(ssh-agent -s)" #Use it to generate SSH key and set it up on Github.
 #chmod 600 ~/.ssh/id_rsa
 #ssh-add ~/.ssh/id_rsa
 
@@ -42,3 +42,6 @@ git config --global init.defaultBranch main
 ./spotify.sh
 
 sudo apt-get update -y && sudo apt-get upgrade -y
+
+echo There is your SSH key, copy and paste it into your github account:
+cat ~/.ssh/*.pub 
