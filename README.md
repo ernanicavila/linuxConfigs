@@ -3,7 +3,7 @@
 In this repo, you'll find Shell Scripts that will assist you on instalation of a few programs needed to development and daily usage.
 Reminder, those are tested into Ubuntu 20.04.
 Follow the steps below:
-
+- Open `installer.sh`, change the lines about Name and Email from Github SSH and save. 
 - Run all scripts with `installer.sh`, it's responsable of running some scripts in sequence.
 - To run an script use `./scriptname.sh`.
 - If the script dont work(execute), run the following line: `chmod +x scriptname.sh`.
