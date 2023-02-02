@@ -8,7 +8,7 @@ Take into account that those were tested in Ubuntu 20.04. Follow the steps below
 - Open `installer.sh`, change the lines about Name and Email from Github SSH and save. 
 - Run all scripts with `installer.sh` on terminal, it's responsable of running some scripts in sequence.
 - To run an script use `./scriptname.sh`.
-- If the script dont work(execute), run the following line: `chmod +x scriptname.sh`.
+- If the script dont work(execute), run the following line: `chmod +x scriptname.sh` and run the script again.
 
 ## Points of warning.
 - Dont run scripts with `sudo`. If its necessary will be added into the script.
