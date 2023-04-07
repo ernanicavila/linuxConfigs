@@ -5,11 +5,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt install -y software-properties-common apt-transport-https wget git git-all mousepad
 
-### Basic configs from github. Change the values name and email for your usage.
-git config --global user.name "nome completo"
-git config --global user.email "email@email.com"
-git config --global core.editor "mousepad --wait"
-git config --global pull.rebase false
+./github.sh
 
 # Changed default key from HTTP to SSH.
 git config --global url."git@github.com:".insteadOf https://github.com/
@@ -40,6 +36,7 @@ eval "$(ssh-agent -s)" #Use it to generate SSH key and set it up on Github.
 ./linux-edits.sh
 ./remote-mousepad.sh
 ./spotify.sh
+./authy.sh
 
 sudo apt-get update -y && sudo apt-get upgrade -y
 

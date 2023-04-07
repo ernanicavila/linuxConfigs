@@ -11,3 +11,4 @@ Follow the steps below:
 ## Points of warning.
 - Dont run scripts with `sudo`. If its necessary will be added into the script.
 - If any script return "dont exist", check the script to see if is there any update to it with the current developer(company that created the package).
+- To correctly configure your Github, edit the file `github.sh` to your settings.
