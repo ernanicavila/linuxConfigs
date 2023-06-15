@@ -5,4 +5,3 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 
 # Refresh repository sources and install Insomnia
 sudo apt-get install insomnia
-
