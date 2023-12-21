@@ -23,7 +23,7 @@ eval "$(ssh-agent -s)" #Use it to generate SSH key and set it up on Github.
 ./insomnia.sh
 ./kolourpaint.sh #Paint Brush for Linux.
 ./vscode.sh
-
+./pgadmin.sh #PGAdmin(Workbench for PostgreSQL)
 
 
 ### Install programs from daily usage.
